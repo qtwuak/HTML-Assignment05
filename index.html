@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 13 - CSS Transitions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        
+        .container {
+            margin-bottom: 40px;
+        }
+
+        /* Base square style */
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: #ffb6c1; /* Light pink */
+            display: flex;
+            align-items: flex-start;
+            padding: 10px;
+            box-sizing: border-box;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.4s ease;
+        }
+
+        /* Square 1: Becomes longer on hover */
+        #square1:hover {
+            width: 400px;
+        }
+
+        /* Square 2: Becomes larger on hover */
+        #square2:hover {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Exercise 13</h2>
+    <ul>
+        <li>Mouse hover square 1: the square becomes longer[cite: 9].</li>
+        <li>Mouse hover square 2: the square becomes larger[cite: 9].</li>
+    </ul>
+
+    <div class="container">
+        <div id="square1" class="square">1</div>
+    </div>
+
+    <div class="container">
+        <div id="square2" class="square">2</div>
+    </div>
+
+</body>
+</html>
